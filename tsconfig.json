@@ -1,15 +1,20 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "declaration": true,
-    "removeComments": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "es2017",
+    "module": "commonjs", // 生成代码模板标准
+    "declaration": true, // 生成声明文件，开启后会自动生成声明文件
+    "removeComments": true, // 删除注释
+    "emitDecoratorMetadata": true, // ts装饰器
+    "experimentalDecorators": true, // ts装饰器使用 @expression
+    "allowSyntheticDefaultImports": true, // 把写 import 复杂的方式处理掉
+    "target": "ES5",
     "sourceMap": true,
-    "outDir": "./dist",
+    "outDir": "./dist", // 将多个依赖的文件生成的文件的位置
     "baseUrl": "./",
-    "incremental": true
+    "incremental": true,
+    "diagnostics": true, // 打印诊断信息
+    "allowJs": true, // 是否允许JS,JSX文件
+    "checkJs": true // 允许在js文件中报错
+
+
   }
 }
