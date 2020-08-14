@@ -1,5 +1,5 @@
 export class gFun {
   formatSendData(): string{
-    return '123'
+    return '123';
   }
 }
